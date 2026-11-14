@@ -1,0 +1,10 @@
+{
+  "regionId": "galapagos-marine-box",
+  "west": -92,
+  "east": -89,
+  "south": -1.5,
+  "north": 1.75,
+  "startMonth": "2003-01",
+  "endMonth": "2024-12",
+  "minimumValidFraction": 0.5
+}
