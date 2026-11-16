@@ -35,6 +35,7 @@ test('sector maps match published estimates at mobile, tablet and desktop widths
     assert.equal(await page.locator('[data-sector="R03C12"]').getAttribute('fill'),'#b09ed5')
     await page.getByLabel('Variable',{exact:true}).selectOption('chlorophyll-a')
     await page.getByLabel('Sector',{exact:true}).selectOption('R09C04')
+    await page.locator('.sector-reading').scrollIntoViewIfNeeded()
     await page.getByText('Insufficient coverage to estimate the trend.').waitFor()
     assert.equal(await page.locator('[data-sector="R09C04"]').getAttribute('fill'),'none')
     await page.getByLabel('Sector',{exact:true}).selectOption('R01C01')
