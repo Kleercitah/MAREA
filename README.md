@@ -2,6 +2,8 @@
 
 MAREA es un observatorio marino en línea que reúne observaciones satelitales del océano alrededor del archipiélago de Galápagos y las presenta como un relato visual, en español y en inglés, para cualquier persona interesada en cómo cambia el mar.
 
+**Aplicación:** [kleercitah.github.io/MAREA](https://kleercitah.github.io/MAREA/).
+
 ## Sobre el proyecto
 
 El Niño altera las aguas del Pacífico oriental y deja su huella en las islas: la temperatura sube, la surgencia se debilita y la producción de fitoplancton cambia. MAREA estudia esas variaciones con datos de satélite y las traduce en mapas, series temporales e indicadores que permiten comparar el presente con episodios anteriores. El observatorio también se ocupa de cinco especies marinas del archipiélago, cuyo hábitat depende de esas mismas condiciones.
