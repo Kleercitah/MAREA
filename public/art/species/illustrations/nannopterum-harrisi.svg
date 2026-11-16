@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Ilustración editorial del cormorán no volador">
+  <defs>
+    <linearGradient id="current" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#006EE9"/><stop offset=".5" stop-color="#83E7FF"/>
+      <stop offset=".82" stop-color="#C78BFF"/><stop offset="1" stop-color="#E8A0FF"/>
+    </linearGradient>
+    <radialGradient id="sea" cx=".5" cy=".4" r=".68">
+      <stop offset="0" stop-color="#153578"/><stop offset=".66" stop-color="#0d1c46"/><stop offset="1" stop-color="#07113D"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#sea)"/>
+  <g fill="none" stroke="#94b8fc" stroke-width="1" opacity=".16">
+    <ellipse cx="400" cy="300" rx="336" ry="152" transform="rotate(-18 400 300)"/>
+    <ellipse cx="400" cy="300" rx="244" ry="110" transform="rotate(-18 400 300)"/>
+    <circle cx="400" cy="300" r="304" stroke-dasharray="2 12"/>
+  </g>
+  <g transform="translate(4 0)">
+    <path d="M105 475q87-23 158-10t130-1q107-16 213 10l54 25H110z" fill="#24385b"/>
+    <path d="m359 401-5 47-17 11 43-3 12-45m25-8 3 42-19 16 47-6-4-54" fill="#447b88"/>
+    <path d="M601 400q-59 15-94-3c-43 40-117 44-166 17-55-31-89-95-83-146 5-43 27-69 30-107 1-19-7-29-25-31-22-1-32-11-26-25 6-22 31-30 54-21 31 11 46 44 36 96-9 48-7 73 35 89 66 26 113 50 145 85l102 35-68-9 60 20z" fill="url(#current)"/>
+    <path d="M255 100q-28 1-74 14l-23 11 7 8 14-8 72-5z" fill="#c3c9bc"/>
+    <path d="M325 254q41 9 73 31l47 59-34-17 15 24-35-20 8 16q-47-26-74-93Z" fill="#244875"/>
+    <path d="m340 275 37 42m-24-37 38 38m-23-32 39 39" fill="none" stroke="#83E7FF" stroke-width="3"/>
+    <circle cx="258" cy="102" r="7" fill="#83E7FF"/><circle cx="258" cy="102" r="3" fill="#07113D"/>
+    <path d="M264 144q41 19 24 79" fill="none" stroke="#d1edf2" stroke-width="4" opacity=".55"/>
+  </g>
+</svg>

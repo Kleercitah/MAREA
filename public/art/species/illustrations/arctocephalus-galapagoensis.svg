@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Ilustración editorial del lobo peletero de Galápagos">
+  <defs>
+    <linearGradient id="current" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#006EE9"/><stop offset=".5" stop-color="#83E7FF"/>
+      <stop offset=".82" stop-color="#C78BFF"/><stop offset="1" stop-color="#E8A0FF"/>
+    </linearGradient>
+    <radialGradient id="sea" cx=".5" cy=".4" r=".68">
+      <stop offset="0" stop-color="#153578"/><stop offset=".66" stop-color="#0d1c46"/><stop offset="1" stop-color="#07113D"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#sea)"/>
+  <g fill="none" stroke="#94b8fc" stroke-width="1" opacity=".16">
+    <ellipse cx="400" cy="300" rx="336" ry="152" transform="rotate(-18 400 300)"/>
+    <ellipse cx="400" cy="300" rx="244" ry="110" transform="rotate(-18 400 300)"/>
+    <circle cx="400" cy="300" r="304" stroke-dasharray="2 12"/>
+  </g>
+  <path d="M84 441q63-41 126-29l97 14 98-6q127-42 207-6l70 46H84z" fill="#273951"/>
+  <path d="M119 382q-20-18-42-17 15 17 32 27l-35-5q9 17 39 21l46-6c54 17 118 26 179 23 68-2 118-21 144-51 20-25 32-54 54-68 16-10 28-9 47-13 18-4 29-16 22-29-3-7-13-12-23-17-7-22-25-40-52-42-32-5-59 10-74 42-12 27-35 50-71 58-51 9-105-2-160 8-41 8-76 27-106 69Z" fill="url(#current)"/>
+  <path d="M433 329q-4 36-20 67l-34 39q-6 10 8 11c22-1 49-16 64-35 22-29 29-54 29-73Z" fill="#396890"/>
+  <path d="M476 262q13-45 51-43 24 3 40 21l-29-1-22 15-14 23Z" fill="#b4c0d2" opacity=".6"/>
+  <path d="M505 246q-11-11-16-3-6 10 6 21" fill="#2a405e"/>
+  <ellipse cx="547" cy="247" rx="9" ry="10" fill="#111936"/><circle cx="550" cy="244" r="2.8" fill="#f0f7fa"/>
+  <path d="M579 249q16 2 23 9l-9 7-14-6z" fill="#101c36"/>
+  <path d="M559 278q16 6 32-6m-18-4 48 4m-49 1 45 10m-49-6 42 15" stroke="#d8ecf7" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M202 364q72-34 173-30" fill="none" stroke="#83E7FF" stroke-width="4" opacity=".48"/>
+</svg>

@@ -4,8 +4,8 @@ export type SpeciesId =
   | 'Spheniscus mendiculus'
   | 'Amblyrhynchus cristatus'
   | 'Zalophus wollebaeki'
-  | 'Chelonia mydas'
-  | 'Mobula birostris'
+  | 'Nannopterum harrisi'
+  | 'Arctocephalus galapagoensis'
 
 export interface Species {
   id: SpeciesId
@@ -82,6 +82,7 @@ export type TrendResult = TrendContext & (
   | {
       status: 'estimated'
       slopePerYear: number
+      slopePerDecade: number
       unit: string
       testName: string
       pValue?: number
@@ -89,3 +90,79 @@ export type TrendResult = TrendContext & (
       significant?: boolean
     }
 )
+
+export interface ClimatologyMonth {
+  month: number
+  status: 'estimated' | 'insufficient-data'
+  years: number
+  mean?: number
+  standardDeviation?: number | null
+  reason?: string
+}
+
+export interface ClimatologyResult {
+  regionId: Region['id']
+  variableId: Variable['id']
+  datasetId: DatasetMeta['id']
+  baseline: TimeRange
+  units: string
+  months: ClimatologyMonth[]
+}
+
+export interface AnomalyObservation {
+  date: string
+  absolute: number | null
+  percent: number | null
+}
+
+export interface AnomalyResult {
+  regionId: Region['id']
+  variableId: Variable['id']
+  datasetId: DatasetMeta['id']
+  baseline: TimeRange
+  units: string
+  method: string
+  observations: AnomalyObservation[]
+}
+
+export interface PeriodComparison {
+  id: string
+  label: LocalizedText
+  regionId: Region['id']
+  variableId: Variable['id']
+  datasetId: DatasetMeta['id']
+  units: string
+  period: TimeRange
+  reference: TimeRange
+  citation: string
+  notes: LocalizedText
+  status: 'estimated' | 'insufficient-data'
+  months: number
+  validMonths: number
+  coverage: number
+  mean: number | null
+  referenceMean: number | null
+  difference: number | null
+  differencePercent: number | null
+}
+
+export interface AnalysisEngine {
+  version: string
+  baseline: TimeRange
+  baselineNote: LocalizedText
+  methods: Record<string, LocalizedText>
+  confidence: number
+  thresholds: Record<string, number>
+  inputs: Record<
+    string,
+    { datasetId: DatasetMeta['id']; sha256: string; period: TimeRange }
+  >
+}
+
+export interface AnalysisBundle {
+  engine: AnalysisEngine
+  climatology: ClimatologyResult[]
+  anomalies: AnomalyResult[]
+  trends: TrendResult[]
+  comparisons: PeriodComparison[]
+}

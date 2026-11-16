@@ -1,0 +1,28 @@
+export const labels = {
+  es: {
+    layer: 'Capa satelital', sst: 'Temperatura superficial', chl: 'Clorofila-a', month: 'Mes de observación',
+    available: 'Meses con capa', overlay: 'Mostrar capa', opacity: 'Opacidad', reset: 'Restablecer vista',
+    mean: 'Media regional', anomaly: 'Anomalía regional', reference: 'Referencia', coverage: 'Cobertura marina',
+    last: 'Última media válida', source: 'Fuente', cell: 'Dato por celda', inspect: 'Selecciona un punto del mapa o pulsa Intro para consultar el centro.',
+    map: 'Mapa de Galápagos', land: 'Tierra', empty: 'Sin dato válido', absent: 'Sin datos espaciales para este mes.',
+    hidden: 'Capa oculta', loading: 'Cargando…', error: 'No se pudo cargar el recurso.', outside: 'Fuera de la rejilla',
+    scale: 'Escala lineal', log: 'Escala logarítmica', nodata: 'Sin dato', study: 'Área de estudio',
+    quality: 'Calidad', valid: 'Válida', missing: 'Mes ausente', insufficient: 'Cobertura insuficiente',
+    zoomIn: 'Acercar', zoomOut: 'Alejar', resolution: 'Malla', atlas: 'Archipiélago de Galápagos', retry: 'Reintentar',
+    quick: 'Cambio rápido de fecha', previous: 'Mes con capa anterior', next: 'Mes con capa siguiente',
+    record: 'Registro completo', hint: 'Este mes no tiene capa espacial. Usa ‹ › para ir al mes con capa más cercano.',
+  },
+  en: {
+    layer: 'Satellite layer', sst: 'Sea surface temperature', chl: 'Chlorophyll-a', month: 'Observation month',
+    available: 'Mapped months', overlay: 'Show layer', opacity: 'Opacity', reset: 'Reset view',
+    mean: 'Regional mean', anomaly: 'Regional anomaly', reference: 'Reference', coverage: 'Ocean coverage',
+    last: 'Latest valid mean', source: 'Source', cell: 'Grid cell value', inspect: 'Select a point on the map or press Enter to inspect its centre.',
+    map: 'Galápagos map', land: 'Land', empty: 'No valid data', absent: 'No spatial data for this month.',
+    hidden: 'Layer hidden', loading: 'Loading…', error: 'Could not load this resource.', outside: 'Outside the grid',
+    scale: 'Linear scale', log: 'Logarithmic scale', nodata: 'No data', study: 'Study area',
+    quality: 'Quality', valid: 'Valid', missing: 'Missing month', insufficient: 'Insufficient coverage',
+    zoomIn: 'Zoom in', zoomOut: 'Zoom out', resolution: 'Grid', atlas: 'Galápagos archipelago', retry: 'Retry',
+    quick: 'Quick date change', previous: 'Previous mapped month', next: 'Next mapped month',
+    record: 'Full record', hint: 'This month has no spatial layer. Use ‹ › to reach the nearest mapped month.',
+  },
+}

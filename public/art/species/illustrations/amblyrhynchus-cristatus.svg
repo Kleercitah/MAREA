@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Ilustración editorial de la iguana marina">
+  <defs>
+    <linearGradient id="current" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#006EE9"/><stop offset=".5" stop-color="#83E7FF"/>
+      <stop offset=".82" stop-color="#C78BFF"/><stop offset="1" stop-color="#E8A0FF"/>
+    </linearGradient>
+    <radialGradient id="sea" cx=".5" cy=".4" r=".68">
+      <stop offset="0" stop-color="#153578"/><stop offset=".66" stop-color="#0d1c46"/><stop offset="1" stop-color="#07113D"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#sea)"/>
+  <g fill="none" stroke="#94b8fc" stroke-width="1" opacity=".16">
+    <ellipse cx="400" cy="300" rx="336" ry="152" transform="rotate(-18 400 300)"/>
+    <ellipse cx="400" cy="300" rx="244" ry="110" transform="rotate(-18 400 300)"/>
+    <circle cx="400" cy="300" r="304" stroke-dasharray="2 12"/>
+  </g>
+  <ellipse cx="400" cy="530" rx="230" ry="20" fill="#040b23" opacity=".5"/>
+  <g stroke="url(#current)" fill="none" stroke-linecap="round">
+    <path d="M170 470C260 430 330 400 420 386c80-12 140-6 190 14" stroke-width="46"/>
+    <path d="M610 400c26 2 46 14 58 32" stroke-width="40"/>
+    <path d="M170 470c-50 16-90 40-116 70" stroke-width="14"/>
+  </g>
+  <circle cx="676" cy="438" r="26" fill="url(#current)"/>
+  <circle cx="686" cy="428" r="6" fill="#07113D"/>
+  <path d="M700 452h22" stroke="#83E7FF" stroke-width="4" stroke-linecap="round" opacity=".8"/>
+  <path d="M250 407l16-34 16 34ZM290 394l16-34 16 34ZM330 382l16-34 16 34ZM370 372l16-34 16 34ZM410 364l16-34 16 34ZM450 362l16-32 16 32ZM490 362l16-30 16 30ZM530 364l16-28 16 28ZM570 368l16-26 16 26Z" fill="url(#current)"/>
+  <g stroke="#83E7FF" stroke-width="16" stroke-linecap="round" opacity=".8">
+    <path d="M300 412l-16 66"/><path d="M420 386l-8 70"/><path d="M540 382l8 68"/><path d="M226 452l-18 50"/>
+  </g>
+  <g fill="none" stroke="#94b8fc" stroke-width="2" opacity=".3">
+    <path d="M60 250c60-30 120-50 190-62"/><path d="M40 300c70-34 140-56 220-70"/><path d="M70 350c70-32 140-52 216-64"/>
+  </g>
+</svg>

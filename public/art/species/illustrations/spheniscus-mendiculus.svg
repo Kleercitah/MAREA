@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Ilustración editorial del pingüino de Galápagos">
+  <defs>
+    <linearGradient id="current" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0" stop-color="#006EE9"/><stop offset=".5" stop-color="#83E7FF"/>
+      <stop offset=".82" stop-color="#C78BFF"/><stop offset="1" stop-color="#E8A0FF"/>
+    </linearGradient>
+    <radialGradient id="sea" cx=".5" cy=".4" r=".68">
+      <stop offset="0" stop-color="#153578"/><stop offset=".66" stop-color="#0d1c46"/><stop offset="1" stop-color="#07113D"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#sea)"/>
+  <g fill="none" stroke="#94b8fc" stroke-width="1" opacity=".16">
+    <ellipse cx="400" cy="300" rx="336" ry="152" transform="rotate(-18 400 300)"/>
+    <ellipse cx="400" cy="300" rx="244" ry="110" transform="rotate(-18 400 300)"/>
+    <circle cx="400" cy="300" r="304" stroke-dasharray="2 12"/>
+  </g>
+  <ellipse cx="400" cy="548" rx="150" ry="20" fill="#040b23" opacity=".55"/>
+  <path d="M400 96c76 0 122 62 126 138 4 74-14 148-14 208 0 46-38 76-86 78h-52c-48-2-86-32-86-78 0-60-18-134-14-208C278 158 324 96 400 96Z" fill="url(#current)"/>
+  <path d="M400 168c44 0 70 50 70 122 0 82-10 158-30 196h-80c-20-38-30-114-30-196 0-72 26-122 70-122Z" fill="#07113D" opacity=".72"/>
+  <path d="M277 250c-40 34-54 96-34 142 34-30 54-84 62-126Z" fill="#040b23" opacity=".55"/>
+  <path d="M400 96c42 0 74 20 96 52-26-14-60-22-96-22s-70 8-96 22c22-32 54-52 96-52Z" fill="#83E7FF" opacity=".28"/>
+  <path d="M486 150l96 22-96 24Z" fill="#E8A0FF"/>
+  <path d="M486 172h74" stroke="#07113D" stroke-width="3"/>
+  <circle cx="452" cy="146" r="9" fill="#07113D"/>
+  <path d="M344 518l-34 30h62Z" fill="#E8A0FF" opacity=".85"/>
+  <path d="M456 518l34 30h-62Z" fill="#E8A0FF" opacity=".85"/>
+  <path d="M400 120v430" stroke="#83E7FF" stroke-width="1.4" opacity=".35"/>
+</svg>

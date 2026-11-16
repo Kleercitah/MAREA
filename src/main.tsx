@@ -9,6 +9,6 @@ import './styles/global.css'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter><LanguageProvider><App /></LanguageProvider></BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}><LanguageProvider><App /></LanguageProvider></BrowserRouter>
   </StrictMode>,
 )

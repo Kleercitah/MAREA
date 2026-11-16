@@ -6,17 +6,17 @@ MAREA es un observatorio marino en línea que reúne observaciones satelitales d
 
 El Niño altera las aguas del Pacífico oriental y deja su huella en las islas: la temperatura sube, la surgencia se debilita y la producción de fitoplancton cambia. MAREA estudia esas variaciones con datos de satélite y las traduce en mapas, series temporales e indicadores que permiten comparar el presente con episodios anteriores. El observatorio también se ocupa de cinco especies marinas del archipiélago, cuyo hábitat depende de esas mismas condiciones.
 
-MAREA nace en el NASA Space Apps Challenge 2026, dentro del desafío *Be An Earth System Trend Detective!*, y utiliza productos de observación de la Tierra de acceso abierto. El proyecto se desarrolla por fases; en esta etapa están resueltos el procesamiento científico de dos variables oceánicas y el esqueleto de la aplicación web.
+MAREA nace en el NASA Space Apps Challenge 2026, dentro del desafío *Be An Earth System Trend Detective!*, y utiliza productos de observación de la Tierra de acceso abierto. El proyecto se desarrolla por fases; en esta etapa están resueltos el procesamiento científico de dos variables oceánicas, el análisis de tendencias y diferencias en 156 sectores de 0,25°, y las siete secciones de la aplicación que lo presentan, incluido el informe científico.
 
 ## Qué puedes explorar
 
-Hoy el sitio ofrece la portada del observatorio y la navegación completa entre sus siete secciones en español e inglés, con la preferencia de idioma conservada entre visitas y un menú adaptado a pantallas pequeñas. Junto a la interfaz, el proyecto ya publica sus dos series mensuales procesadas —clorofila-a y temperatura superficial del mar del sector marino de Galápagos— con su procedencia, su cobertura y sus limitaciones documentadas.
+Ocean Explorer permite consultar 525 capas mensuales y 156 sectores de 0,25°. Climate Detective compara los meses con sus referencias y estima tendencias regionales. En los sectores, 11 pruebas de SST y 22 de clorofila-a dan p local < 0,05. Ninguna alcanza q < 0,05 tras el ajuste de Benjamini–Yekutieli por variable. Este resultado limita la evidencia de tendencia a largo plazo.
 
-El resto del observatorio está en desarrollo. La visión completa incluye un mapa oceanográfico interactivo, las series de temperatura superficial y de clorofila-a con sus tendencias y anomalías, la comparación de distintos periodos de El Niño, las fichas de las cinco especies marinas, indicadores ambientales que dan contexto a su hábitat, ilustraciones y fotografías reales, y un informe científico que reúna fuentes, métodos y limitaciones. Las seis secciones correspondientes se están construyendo de forma progresiva y todavía no están disponibles.
+La cronología distingue los episodios ONI del intervalo de comparación satelital. Vida Marina permite elegir un mes y contrastarlo con estudios de campo. Señales de hábitat reúne fotografías y escenarios independientes de temperatura y clorofila para cada especie, con consecuencias documentadas, hipótesis y un ejemplo real del archivo. El informe científico reúne los resultados y se puede imprimir o guardar como PDF.
 
 ## Especies
 
-El observatorio dedica una ficha a cada una de estas cinco especies, todas presentes en el archipiélago: el pingüino de Galápagos (*Spheniscus mendiculus*), la iguana marina (*Amblyrhynchus cristatus*), el lobo marino de Galápagos (*Zalophus wollebaeki*), la tortuga verde (*Chelonia mydas*) y la manta raya oceánica (*Mobula birostris*). Cada ficha relacionará la especie con las condiciones ambientales de la región y acreditará las fuentes y las imágenes utilizadas.
+El observatorio dedica una ficha a cada una de estas cinco especies, todas presentes en el archipiélago: el pingüino de Galápagos (*Spheniscus mendiculus*), la iguana marina (*Amblyrhynchus cristatus*), el lobo marino de Galápagos (*Zalophus wollebaeki*), el cormorán no volador (*Nannopterum harrisi*) y el lobo peletero de Galápagos (*Arctocephalus galapagoensis*). Cada ficha separa la observación satelital, la interpretación ecológica, la evidencia de estudios y las hipótesis de mecanismo, distingue lo que cada indicador puede y no puede representar, y acredita las fuentes y las imágenes utilizadas. Las fotografías son auténticas de la especie correcta y llevan su crédito y licencia; las ilustraciones se identifican como tales. La opción Modelo carga únicamente el GLB de Tripo de la especie seleccionada (54–56 MB). Se puede rotar con ratón o tacto. Su finalidad es ilustrativa y carece de validación anatómica.
 
 ## Datos y fuentes
 
@@ -26,7 +26,7 @@ Ambas series cubren de enero de 2003 a diciembre de 2024 en el mismo rectángulo
 
 ## Tecnologías
 
-La aplicación web está construida con React, TypeScript, Vite, React Router y Tailwind CSS, con tipografías locales. El procesamiento científico se escribe en Python y utiliza numpy y netCDF4 para leer los archivos NetCDF originales de NASA y NOAA.
+La aplicación web está construida con React, TypeScript, Vite, React Router y Tailwind CSS, con tipografías locales. Los mapas usan Leaflet y los modelos de las especies se visualizan con three.js, que solo se descarga al abrir la vista «Modelo 3D». El procesamiento científico se escribe en Python y utiliza numpy y netCDF4 para leer los archivos NetCDF originales de NASA y NOAA.
 
 ## Desarrollo local
 

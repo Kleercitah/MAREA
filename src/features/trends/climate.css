@@ -1,0 +1,21 @@
+.climate { padding-block: 2.5rem 3rem; }
+.climate h1 { font-size: clamp(2.6rem,5vw,4.5rem); margin:.65rem 0 1.6rem; }
+.climate-controls { display:flex; flex-wrap:wrap; gap:1rem 2rem; border-block:1px solid var(--line); padding:1rem 0; }
+.climate-controls label { font-size:.8rem; color:var(--muted); }
+.climate-controls select { display:block; padding:.5rem .7rem; margin-top:.3rem; border:1px solid var(--line); border-radius:5px; color:white; background:#112248; }
+.time-chart { background:#101c41; border:1px solid var(--line); border-radius:8px; padding:clamp(.6rem,2vw,1.5rem); margin-top:1.2rem; }
+.time-chart figcaption,.chart-reader { display:flex; align-items:center; gap:1rem; flex-wrap:wrap; }
+.time-chart figcaption { justify-content:space-between; }
+.time-chart svg { width:100%; margin-block:.6rem; }
+.time-chart text { fill:#c4d1e4; font:13px var(--font-sans); }
+.chart-reader,.time-chart small,.climate-note,.episode p,.trend-summary p { font-size:.88rem; color:var(--muted); }
+.chart-reader input { accent-color:var(--color-sunny-tides); min-width:80px; flex:1; }
+.chart-reader output { font-variant-numeric:tabular-nums; }
+.climate-note { margin-top:.6rem; }.climate-note a { color:var(--color-sunny-tides); }
+.trend-summary,.episode { padding-block:1.4rem; border-bottom:1px solid var(--line); }
+.climate h2 { font-size:1.6rem; margin:0 0 .4rem; }
+.trend-summary dl { display:flex; flex-wrap:wrap; gap:1rem 2.5rem; margin:1rem 0; }
+.trend-summary dt { font-size:.8rem;color:var(--muted); }.trend-summary dd { color:var(--color-sunny-tides);font:550 1.24rem var(--font-display); }
+.comparison-scroll { overflow:auto; } .episode table { width:100%; font-size:.85rem; margin-top:.8rem; border-collapse:collapse; }
+.episode th,.episode td { padding:.65rem .6rem; text-align:right; white-space:nowrap; border-bottom:1px solid var(--line); }.episode th:first-child { text-align:left; }
+@media(max-width:600px) { .chart-reader output {width:100%;}.trend-summary dl { display:grid;grid-template-columns:1fr 1fr; }.climate-controls {gap:.6rem;} }

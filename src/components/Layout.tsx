@@ -3,9 +3,10 @@ import { Link, NavLink, Outlet, useLocation } from 'react-router'
 import { sections } from '../app/sections'
 import { useLanguage } from '../i18n/Language'
 import { Icon } from './Icon'
+import { publicUrl } from '../public-url'
 
 function Brand() {
-  return <Link to="/" className="brand"><img src="/brand.svg" alt="" width="38" height="38" />MAREA</Link>
+  return <Link to="/" className="brand"><img src={publicUrl('/brand.svg')} alt="" width="38" height="38" />MAREA</Link>
 }
 
 export function Layout() {

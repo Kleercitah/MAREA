@@ -1,0 +1,114 @@
+.species { padding-block: 2.4rem 4rem; }
+.species h1 { font-size: clamp(2.7rem, 5vw, 4.8rem); margin: .4rem 0 1.5rem; }
+.species-index-title, .field-kind, .field-result h3 { font: 600 .78rem/1.5 var(--font-sans); letter-spacing: .09em; text-transform: uppercase; color: var(--color-sunny-tides); }
+.species-index-title { margin: 0 0 .5rem; color: var(--muted); }
+.species-index { list-style: none; padding: .3rem .2rem .65rem; margin: 0; display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); gap: .75rem; }
+.species-index button { display: flex; flex-direction: column; align-items: start; width: 100%; height: 100%; text-align: left; padding: .55rem .55rem .85rem; border: 1px solid var(--line); border-radius: .6rem; background: #101c39; color: var(--muted); }
+.species-index button[aria-pressed=true] { border-color: var(--color-sunny-tides); color: white; background: #142743; }
+.species-index button:focus-visible { outline: 2px solid var(--color-orchid-tide); outline-offset: 2px; }
+.species-index img { width: 100%; height: auto; aspect-ratio: 4/3; object-fit: contain; border-radius: .35rem; margin-bottom: .65rem; }
+.index-name { font: 560 1rem/1.25 var(--font-display); }
+.index-scientific { margin-top: .25rem; font: italic .78rem/1.35 var(--font-sans); }
+.species-article { display: grid; grid-template-columns: minmax(0,1.1fr) minmax(0,1fr); gap: 2rem clamp(1.4rem,4vw,4rem); margin-top: 2rem; }
+.species-article:focus-visible { outline: 2px solid var(--color-sunny-tides); }
+.portrait { position: relative; align-self: start; }
+.portrait-switch { display: inline-flex; margin-top: .7rem; padding: .2rem; background: #07113df2; border: 1px solid #83e7ff70; border-radius: 2rem; }
+.portrait-switch button { padding: .48rem .9rem; color: white; font: 550 .8rem var(--font-sans); border-radius: 2rem; }
+.portrait-switch button[aria-pressed=true] { background: var(--color-sunny-tides); color: var(--color-midnight-current); }
+.portrait-figure { margin: 0; }
+.portrait-frame { background: #101c41; border-radius: .6rem; overflow: hidden; }
+.portrait-frame img { width: 100%; height: auto; display: block; aspect-ratio: 4/3; object-fit: cover; }
+.portrait-frame img[src$="/nannopterum-harrisi.jpg"] { object-position: center top; }
+.portrait-frame[data-view="illustration"] img { object-fit: contain; }
+.portrait-meta { font-size: .78rem; line-height: 1.65; display: flex; flex-wrap: wrap; gap: .1rem .9rem; margin-top: .65rem; color: var(--muted); }
+.portrait-meta p { margin: 0; }
+.species a { color: var(--color-sunny-tides); }
+.species a.primary { color: var(--color-midnight-current); }
+.species-copy h2 { font: 550 clamp(2.3rem,4vw,3.9rem)/1.04 var(--font-display); letter-spacing: -.055em; margin: 0; }
+.scientific-name { margin: .4rem 0; color: var(--color-sunny-tides); font-style: italic; }
+.species-lead-text { margin: .9rem 0; line-height: 1.65; max-width: 60ch; }
+.taxonomy-detail { font-size: .85rem; color: var(--muted); }
+.species summary { cursor: pointer; }
+.taxonomy { display: flex; flex-wrap: wrap; gap: .45rem 1rem; list-style: none; padding: 0; }
+.field-result.biological-evidence { margin: 1.35rem 0 0; border-bottom: 0; padding: .85rem 0 0; }
+.field-result h3 { font-size: .73rem; margin: 0; }
+.field-result .field-magnitude { color: var(--color-orchid-tide); font: 530 clamp(3.1rem,6vw,5rem)/1.03 var(--font-display); letter-spacing: -.065em; margin: .35rem 0; }
+.field-result .field-metric { font-size: 1.05rem; margin: 0; }
+.field-result .field-area { color: var(--muted); margin: .25rem 0 .6rem; }
+.field-result details, .field-result > a, .field-body a { font-size: .88rem; }
+.field-result details { margin: .4rem 0; }
+.field-body { grid-column: 1/-1; min-width: 0; }
+.field-body h3 { font: 550 clamp(1.65rem,3vw,2.55rem)/1.15 var(--font-display); letter-spacing: -.035em; margin: 0 0 1.2rem; }
+.episode-history, .eco-path { border-top: 1px solid var(--line); padding-block: 1.8rem; }
+.episode-history ol { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1.5rem; list-style: none; margin: 0; padding: 0; }
+.episode-history li { border-top: 2px solid #3974ae; padding-top: .75rem; }
+.field-body h4 { font: 560 1.13rem/1.35 var(--font-display); margin: 0; }
+.episode-history p, .path-steps dd p { line-height: 1.65; margin: .35rem 0 .55rem; max-width: 78ch; }
+/* Del océano al ecosistema: secuencia editorial estática, sin nodos ni panel interactivo. */
+.path-steps { margin: 0; display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1.1rem clamp(1rem,2.5vw,2.5rem); }
+.path-steps > div { border-top: 2px solid #3974ae; padding-top: .7rem; }
+.path-steps dt { font: 560 1.06rem/1.35 var(--font-display); }
+.path-steps dd { margin: 0; }
+.path-steps .field-kind { margin: 0 0 .3rem; }
+.path-steps .path-caveat { border-top-color: var(--color-orchid-tide); }
+.path-steps .path-caveat dt { color: var(--color-orchid-tide); }
+.field-kind { display: block; font-size: .68rem; margin-bottom: .35rem; }
+.species-section, .species-references { border-top: 1px solid var(--line); }
+.species-section summary, .species-references summary { padding: .8rem 0; font: 520 1.06rem var(--font-display); }
+.species-section p, .species-references ol { line-height: 1.7; max-width: 80ch; margin: .1rem 0 1rem; }
+.section-citations, .species-links { display: flex; flex-wrap: wrap; gap: .4rem 1.2rem; }
+.species-references li { overflow-wrap: anywhere; }
+.species-links { align-items: center; margin-top: 1.5rem; }
+@media (max-width: 60rem) {
+  .species-index { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; }
+  .species-index li { flex: 0 0 min(68%, 14rem); scroll-snap-align: start; }
+  .species-article { gap: 1.5rem; }
+}
+@media (max-width: 44rem) {
+  .species { padding-block: 1.5rem 2rem; }
+  .species-index button { min-height: 44px; padding: .5rem; }
+  .species-article, .episode-history ol { grid-template-columns: minmax(0,1fr); }
+  .species-article { margin-top: 1.2rem; }
+  .episode-history ol { gap: 1rem; }
+  .path-steps { grid-template-columns: minmax(0,1fr); }
+  .portrait-switch button { min-height: 40px; }
+}
+
+.species-month { border-block-start: 1px solid var(--line); padding: 2rem 0; }
+.monthly-scope { color: var(--muted); }
+.month-controls { display: flex; flex-wrap: wrap; gap: .8rem; margin: 1rem 0; }
+.month-controls label { display: grid; gap: .25rem; font-size: .82rem; }
+.month-controls select { background: #101c39; color: white; border: 1px solid var(--line); border-radius: .35rem; padding: .5rem; }
+.monthly-indicators { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 1rem; margin: 1.25rem 0; }
+.monthly-indicator { border-top: 2px solid var(--color-sunny-tides); padding: 1rem 0; }
+.monthly-indicator:nth-child(2) { border-color: var(--color-orchid-tide); }
+.month-value { margin: .35rem 0; font: 520 clamp(1.8rem,4vw,3.2rem)/1.2 var(--font-display); }
+.month-value small { font-size: .46em; }
+.monthly-indicator dl { font-size: .87rem; margin: .75rem 0; }
+.monthly-indicator dl div { display: flex; justify-content: space-between; gap: .5rem; padding-block: .25rem; max-width: 23rem; border-bottom: 1px solid var(--line); }
+.monthly-indicator dd { margin: 0; }
+.monthly-indicator > p:not(.month-value) { color: var(--muted); font-size: .8rem; }
+.editorial-layout { display: grid; grid-template-columns: minmax(12rem,18rem) minmax(0,1fr); gap: clamp(1rem,3vw,3rem); align-items: center; margin-bottom: 1.6rem; }
+/* Alternancia editorial: en los apartados alternos la imagen pasa a la derecha. */
+.species-section:nth-child(even) .editorial-layout { grid-template-columns: minmax(0,1fr) minmax(12rem,18rem); }
+.species-section:nth-child(even) .editorial-layout > figure { order: 2; }
+.editorial-layout figure { margin: 0; }
+.editorial-image { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: cover; border-radius: .45rem; background: #101c39; }
+.editorial-layout figcaption { font-size: .76rem; color: var(--muted); margin-top: .4rem; }
+.editorial-layout figcaption a { font-size: inherit; }
+@media (max-width: 44rem) {
+  .editorial-layout, .species-section:nth-child(even) .editorial-layout { grid-template-columns: minmax(0,1fr); }
+  .species-section:nth-child(even) .editorial-layout > figure { order: 0; }
+  .monthly-indicators { grid-template-columns: 1fr; gap: .3rem; }
+}
+
+/* Modelo 3D: estado «En preparación» para fichas sin archivo publicado. */
+.portrait-model { display: grid; place-content: center; gap: .35rem; aspect-ratio: 4 / 3; padding: 1.5rem; text-align: center; border-radius: .6rem; background: radial-gradient(120% 120% at 50% 0%, #1a3f6e 0%, #0b1f42 55%, #071230 100%); }
+.portrait-model-name { margin: 0; font: 550 clamp(1.2rem,3vw,1.7rem)/1.15 var(--font-display); color: #eef4ff; }
+.portrait-model-state { margin: .2rem 0 0; font: 600 .72rem var(--font-sans); letter-spacing: .12em; text-transform: uppercase; color: var(--color-orchid-tide); }
+
+/* Visor 3D: fondo azul del observatorio, sin rejilla ni suelo artificial. */
+.model-viewer { position: relative; aspect-ratio: 4 / 3; overflow: hidden; background: radial-gradient(120% 120% at 50% 8%, #1a3f6e 0%, #0b1f42 58%, #071230 100%); touch-action: none; }
+.model-viewer canvas { display: block; width: 100%; height: 100%; }
+.model-viewer-state { position: absolute; inset: 0; margin: 0; display: grid; place-content: center; padding: 1.5rem; text-align: center; font: 600 .72rem/1.5 var(--font-sans); letter-spacing: .12em; text-transform: uppercase; color: var(--color-orchid-tide); }
+.model-viewer-hint { position: absolute; left: 0; right: 0; bottom: 0; margin: 0; padding: .55rem .8rem .6rem; font-size: .72rem; line-height: 1.4; color: #cfe4ff; background: linear-gradient(transparent, #071230d9); }
